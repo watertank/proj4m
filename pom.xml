@@ -3,12 +3,12 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>org.maptalks</groupId>
-    <artifactId>proj4m</artifactId>
+    <artifactId>proj4m-lite</artifactId>
     <version>2.0.0-SNAPSHOT</version>
 
     <name>proj4m</name>
     <description>An Proj4 extension with supports for Chinese projections.</description>
-    <url>https://github.com/MapTalks/proj4m</url>
+    <url>https://github.com/watertank/proj4m-lite</url>
     <licenses>
         <license>
             <name>The MIT License (MIT)</name>
@@ -17,7 +17,7 @@
         </license>
     </licenses>
     <issueManagement>
-        <url>https://github.com/MapTalks/proj4m/issues</url>
+        <url>https://github.com/watertank/proj4m-lite/issues</url>
     </issueManagement>
     <developers>
         <developer>
@@ -32,9 +32,9 @@
     </properties>
 
     <scm>
-        <connection>scm:git:https://github.com/MapTalks/proj4m</connection>
-        <developerConnection>scm:git:git@github.com:MapTalks/proj4m.git</developerConnection>
-        <url>https://github.com/MapTalks/proj4m</url>
+        <connection>scm:git:https://github.com/watertank/proj4m-lite</connection>
+        <developerConnection>scm:git:git@github.com:watertank/proj4m-lite.git</developerConnection>
+        <url>https://github.com/watertank/proj4m-lite</url>
         <tag>HEAD</tag>
     </scm>
 
@@ -52,30 +52,8 @@
         </dependency>
     </dependencies>
 
-    <distributionManagement>
-        <repository>
-            <id>ossrh</id>
-            <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
-        </repository>
-        <snapshotRepository>
-            <id>ossrh</id>
-            <url>https://oss.sonatype.org/content/repositories/snapshots</url>
-        </snapshotRepository>
-    </distributionManagement>
-
     <build>
         <plugins>
-            <plugin>
-                <groupId>org.sonatype.plugins</groupId>
-                <artifactId>nexus-staging-maven-plugin</artifactId>
-                <version>1.6.7</version>
-                <extensions>true</extensions>
-                <configuration>
-                    <serverId>ossrh</serverId>
-                    <nexusUrl>https://oss.sonatype.org/</nexusUrl>
-                    <autoReleaseAfterClose>true</autoReleaseAfterClose>
-                </configuration>
-            </plugin>
             <plugin>
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>2.5.1</version>
@@ -92,56 +70,32 @@
                     <skipTests>false</skipTests>
                 </configuration>
             </plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-source-plugin</artifactId>
+				<version>2.2.1</version>
+				<executions>
+					<execution>
+						<id>attach-sources</id>
+						<goals>
+							<goal>jar-no-fork</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-javadoc-plugin</artifactId>
+				<version>2.10.3</version>
+				<executions>
+					<execution>
+						<id>attach-javadocs</id>
+						<goals>
+							<goal>jar</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
         </plugins>
     </build>
-
-    <profiles>
-        <profile>
-            <id>release</id>
-            <build>
-                <plugins>
-                    <plugin>
-                        <groupId>org.apache.maven.plugins</groupId>
-                        <artifactId>maven-source-plugin</artifactId>
-                        <version>2.2.1</version>
-                        <executions>
-                            <execution>
-                                <id>attach-sources</id>
-                                <goals>
-                                    <goal>jar-no-fork</goal>
-                                </goals>
-                            </execution>
-                        </executions>
-                    </plugin>
-                    <plugin>
-                        <groupId>org.apache.maven.plugins</groupId>
-                        <artifactId>maven-javadoc-plugin</artifactId>
-                        <version>2.10.3</version>
-                        <executions>
-                            <execution>
-                                <id>attach-javadocs</id>
-                                <goals>
-                                    <goal>jar</goal>
-                                </goals>
-                            </execution>
-                        </executions>
-                    </plugin>
-                    <plugin>
-                        <groupId>org.apache.maven.plugins</groupId>
-                        <artifactId>maven-gpg-plugin</artifactId>
-                        <version>1.5</version>
-                        <executions>
-                            <execution>
-                                <id>sign-artifacts</id>
-                                <phase>verify</phase>
-                                <goals>
-                                    <goal>sign</goal>
-                                </goals>
-                            </execution>
-                        </executions>
-                    </plugin>
-                </plugins>
-            </build>
-        </profile>
-    </profiles>
 </project>
