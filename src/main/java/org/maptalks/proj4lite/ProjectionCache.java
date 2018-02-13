@@ -1,11 +1,11 @@
-package org.maptalks.proj4;
+package org.maptalks.proj4lite;
 
 import java.util.HashMap;
 import java.util.Map;
-import org.maptalks.proj4.projection.BaiduMercator;
-import org.maptalks.proj4.projection.LonLat;
-import org.maptalks.proj4.projection.Projection;
-import org.maptalks.proj4.projection.SphericalMercator;
+import org.maptalks.proj4lite.projection.BaiduMercator;
+import org.maptalks.proj4lite.projection.LonLat;
+import org.maptalks.proj4lite.projection.Projection;
+import org.maptalks.proj4lite.projection.SphericalMercator;
 
 class ProjectionCache {
 

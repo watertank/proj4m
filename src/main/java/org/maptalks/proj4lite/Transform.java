@@ -1,7 +1,7 @@
-package org.maptalks.proj4;
+package org.maptalks.proj4lite;
 
-import org.maptalks.proj4.projection.Projection;
-import org.maptalks.proj4.projection.ProjectionType;
+import org.maptalks.proj4lite.projection.Projection;
+import org.maptalks.proj4lite.projection.ProjectionType;
 
 class Transform {
 

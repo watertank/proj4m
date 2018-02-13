@@ -1,11 +1,11 @@
-package org.maptalks.proj4;
+package org.maptalks.proj4lite;
 
 import java.io.Closeable;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
-import org.maptalks.proj4.rhino.JsonModuleScriptProvider;
+import org.maptalks.proj4lite.rhino.JsonModuleScriptProvider;
 import org.mozilla.javascript.Context;
 import org.mozilla.javascript.Function;
 import org.mozilla.javascript.Scriptable;

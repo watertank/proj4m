@@ -1,6 +1,6 @@
-package org.maptalks.proj4.projection;
+package org.maptalks.proj4lite.projection;
 
-import org.maptalks.proj4.PointAdaptor;
+import org.maptalks.proj4lite.PointAdaptor;
 
 public class LonLat<T> implements Projection<T> {
 

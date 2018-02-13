@@ -1,4 +1,4 @@
-package org.maptalks.proj4.projection;
+package org.maptalks.proj4lite.projection;
 
 public enum ProjectionType {
 

@@ -1,4 +1,4 @@
-package org.maptalks.proj4;
+package org.maptalks.proj4lite;
 
 class WKTParser {
     static Proj parse(String wkt) {

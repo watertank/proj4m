@@ -1,4 +1,4 @@
-package org.maptalks.proj4.rhino;
+package org.maptalks.proj4lite.rhino;
 
 import org.mozilla.javascript.*;
 import org.mozilla.javascript.commonjs.module.ModuleScript;

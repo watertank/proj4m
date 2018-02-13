@@ -1,4 +1,4 @@
-package org.maptalks.proj4;
+package org.maptalks.proj4lite;
 
 import java.util.concurrent.ConcurrentHashMap;
 

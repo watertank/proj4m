@@ -1,4 +1,4 @@
-package org.maptalks.proj4;
+package org.maptalks.proj4lite;
 
 
 import static org.junit.Assert.assertEquals;

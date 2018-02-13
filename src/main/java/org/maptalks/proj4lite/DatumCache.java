@@ -1,12 +1,12 @@
-package org.maptalks.proj4;
+package org.maptalks.proj4lite;
 
 import java.util.HashMap;
 import java.util.Map;
-import org.maptalks.proj4.datum.BD09LL;
-import org.maptalks.proj4.datum.CGCS2000;
-import org.maptalks.proj4.datum.Datum;
-import org.maptalks.proj4.datum.GCJ02;
-import org.maptalks.proj4.datum.WGS84;
+import org.maptalks.proj4lite.datum.BD09LL;
+import org.maptalks.proj4lite.datum.CGCS2000;
+import org.maptalks.proj4lite.datum.Datum;
+import org.maptalks.proj4lite.datum.GCJ02;
+import org.maptalks.proj4lite.datum.WGS84;
 
 class DatumCache {
 

@@ -1,7 +1,7 @@
-package org.maptalks.proj4;
+package org.maptalks.proj4lite;
 
-import org.maptalks.proj4.datum.BD09LL;
-import org.maptalks.proj4.datum.Datum;
+import org.maptalks.proj4lite.datum.BD09LL;
+import org.maptalks.proj4lite.datum.Datum;
 
 class DatumTransform {
 

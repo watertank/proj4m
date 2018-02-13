@@ -1,6 +1,6 @@
-package org.maptalks.proj4.datum;
+package org.maptalks.proj4lite.datum;
 
-import org.maptalks.proj4.PointAdaptor;
+import org.maptalks.proj4lite.PointAdaptor;
 
 public interface Datum<T> {
 

@@ -1,4 +1,4 @@
-package org.maptalks.proj4;
+package org.maptalks.proj4lite;
 
 public class Proj4Exception extends Exception {
 

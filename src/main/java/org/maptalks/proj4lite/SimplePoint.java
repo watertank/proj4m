@@ -1,4 +1,4 @@
-package org.maptalks.proj4;
+package org.maptalks.proj4lite;
 
 public class SimplePoint implements Point {
     private double x;
